@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Truth Table Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Logic Truth Table Generator</h1>
+  <p class="subtitle">
+    Use:Capital letters for variables (A, B, C, etc.) and built-in operators (^, v, !)<br>
+  </p>
+
+  <!-- Input -->
+  <div class="card">
+    <input type="text" id="expression" placeholder="Example: (A ^ B) v !C" oninput="showVariables()">
+    <button onclick="generateTable()">Generate Truth Table</button>
+
+    <!-- Keyboard -->
+    <div class="keyboard">
+      <button onclick="insertValue('^')">AND(^)</button>
+      <button onclick="insertValue('v')">OR(v)</button>
+      <button onclick="insertValue('!')">NOT(!)</button>
+      <button onclick="location.reload()">Clear</button>
+      <button onclick="backspace()">⌫</button>
+    </div>
+  </div>
+
+  <!-- Variables -->
+  <div class="card">
+    <h3>Detected Variables</h3>
+    <div id="variables"></div>
+  </div>
+
+  <!-- Output -->
+  <div class="card hidden" id="resultBox">
+    <h3 id="title"></h3>
+    <div id="output"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
