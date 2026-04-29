@@ -1,20 +1,32 @@
 # Truth Table Generator Web Application
 
 ## Overview
-A web-based application that generates truth tables for complex boolean expressions.
+A web-based application that generates truth tables for complex boolean expressions. This project demonstrates the practical application of discrete mathematics concepts through a user-friendly interface and structured logical evaluation.
+
+---
 
 ## Features
-- Accepts logical expressions
-- Generates full truth tables
-- Web-based interface
+- Accepts user-defined logical expressions
+- Generates complete truth tables for all input combinations
+- Structured evaluation of boolean logic
+- Clean and simple web interface
+
+---
 
 ## Tech Stack
-- Java (logic engine)
-- HTML, CSS, JavaScript
+- **Java** – Logic processing engine  
+- **HTML, CSS** – Frontend interface  
+
+---
 
 ## Live Demo
-https://mrav3838.github.io/truth-table-generator/
+🔗 https://yourusername.github.io/truth-table-generator/
 
-## Documentation
-- Report: /docs/report.pdf
-- Presentation: /docs/presentation.pdf
+---
+
+## Screenshots
+
+![Input Interface](screenshots/truth-table-input.png)
+
+![Generated Output](screenshots/truth-table-output.png)
+
